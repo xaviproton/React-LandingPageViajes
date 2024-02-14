@@ -1,4 +1,7 @@
-# React + Vite
+
+# React + Vite!
+[Captura de pantalla 2024-02-14 150113](https://github.com/xaviproton/React-LandingPageViajes/assets/126198919/f0fecdf8-1097-4e0c-a247-f40de1d95636)
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
