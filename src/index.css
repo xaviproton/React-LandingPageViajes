@@ -1,0 +1,912 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fuentes del proyecto */
+
+@font-face {
+  font-family: xitalic;
+  src: url("../src/fuentes/a750sanscdmediumregular.ttf");
+}
+
+@font-face {
+  font-family: xbrother;
+  src: url("../src/fuentes/brothers-bold.ttf");
+}
+@font-face {
+  font-family: xcircus;
+  src: url("../src/fuentes/brothers-circus-regular.ttf");
+}
+@font-face {
+  font-family: xdeco;
+  src: url("../src/fuentes/f650decoregular.ttf");
+}
+
+/* Barra de navehacion */
+
+.navbarsub {
+  font-family: xitalic;
+  z-index: 2;
+}
+.navleft {
+  margin-left: -11rem;
+}
+.navcenter {
+  margin-left: -11rem;
+}
+.navright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6rem;
+  height: 8rem;
+  margin-right: -11rem;
+}
+
+.navright a {
+  transition: all 0.3s ease;
+}
+.navright a:active {
+  transform: translateY(2px);
+}
+/* Importante para el posicionamiento absoluto del contenido */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 13rem;
+}
+
+.dropdown a {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.dropbtn {
+  font-size: 1.8rem;
+  color: black;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 13rem;
+}
+
+/* Estilos para el contenido del menú desplegable (inicialmente oculto) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(100, 200, 100, 0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 10rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los enlaces de dentro del menú desplegable */
+
+.dropdown-content a {
+  padding: 9px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  width: 13rem;
+  transition: background-color 0.3s;
+}
+
+/* Cambiar el color de fondo del enlace al pasar el ratón sobre él */
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+  border: 0.2px solid rgb(25, 167, 44);
+  width: 11rem;
+}
+.dropdown-content a:active {
+  transform: translateY(2px); /* Efecto de hundimiento */
+  box-shadow: none;
+}
+/* Mostrar el menú desplegable cuando se hace clic en el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 13rem;
+}
+
+/* Main */
+
+/* Lado Izquierdo */
+
+.main1 {
+  display: flex;
+  width: 100%;
+  height: 60rem;
+  justify-content: space-around;
+  background: rgb(250, 206, 11);
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(250, 206, 11, 1) 64%,
+    rgba(242, 238, 208, 1) 100%
+  );
+  margin-top: 5rem;
+  padding: 2rem;
+  z-index: -1;
+}
+
+.mainleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 40rem;
+  color: white;
+  /* background-color: red; */
+  margin-top: 3rem;
+  padding: 5px;
+}
+
+/* Texto */
+
+.mainlefttext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Xavi, recuerda, Esto es importante para centrar verticalmente */
+  height: 100%;
+  padding: 5px;
+}
+
+.mainlefttext h2 {
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: xitalic;
+  letter-spacing: 7px;
+  word-spacing: -0.5rem;
+  margin: 0;
+}
+
+.mainlefttext h1 {
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: xcircus;
+  margin: -3px;
+  margin-top: -3rem;
+}
+
+.mainlefttext h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: xbrother;
+  margin-top: 3px;
+}
+
+.mini-text h4 {
+  width: 19rem;
+  font-size: 1.5rem;
+  margin-top: 21px;
+  font-family: xbrother;
+}
+
+/* LEtras paarpadeantes */
+.magic {
+  width: 30rem;
+  height: 6rem;
+  padding: 5px;
+}
+.super-text {
+  width: 30rem;
+}
+
+.super-text h4 {
+  font-size: 6rem;
+  font-family: xdeco;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.5);
+  color: actualizarColor;
+}
+
+/* Boton main1 */
+
+.mainleft-redirect {
+  margin-top: -7.7rem;
+  box-shadow: 16px 18px 9px 3px rgba(0, 0, 0, 0.39);
+}
+
+.mainleft-redirect button {
+  width: 20rem;
+  height: 5rem;
+  background-color: black;
+  box-shadow: 0 0 2px;
+  color: white;
+  font-family: xitalic;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mainleft-redirect button:hover {
+  background-color: #041927;
+}
+
+.mainleft-redirect button:active {
+  transform: translateY(12px); 
+  box-shadow: none;
+}
+
+/* Lado derecho */
+
+.mainright {
+  display: flex;
+  flex-direction: space-between;
+  width: 50rem;
+  height: 20rem;
+  color: white;
+
+  margin-top: 8rem;
+  z-index: 0;
+}
+
+.mainimagen1 img {
+  position: relative;
+  width: 26rem;
+  height: auto;
+  margin-top: -4rem;
+  margin-left: -9rem;
+  filter: drop-shadow(12px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -1;
+}
+.mainimagen2 img {
+  position: relative;
+  width: 55rem;
+  height: 720px;
+  border-radius: 7rem;
+  margin-left: -26rem;
+  filter: drop-shadow(-22px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -2;
+}
+.mainimagen3 img {
+  position: relative;
+  width: 39rem;
+  height: auto;
+
+  margin-top: 9rem;
+
+  margin-left: -35rem;
+  filter: drop-shadow(12px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -2;
+}
+.mainimagen4 img {
+  position: relative;
+  width: 25rem;
+  height: auto;
+  margin-top: -4rem;
+  margin-left: -47rem;
+  filter: drop-shadow(12px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -2;
+}
+.mainimagen5 img {
+  position: relative;
+  width: 40rem;
+  height: auto;
+  margin-top: -9rem;
+  margin-left: -30rem;
+  filter: drop-shadow(12px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -2;
+}
+.mainimagen6 img {
+  position: relative;
+  width: 43rem;
+  height: auto;
+  margin-top: 24rem;
+  margin-left: -70rem;
+  filter: drop-shadow(12px 3px 6px rgba(0, 0, 0, 0.5));
+  z-index: -1;
+}
+
+/* Imagen central con animacion de gafas */
+.animacionCentral {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: transparent;
+
+  margin: -2.5rem;
+}
+
+.animacion img {
+  height: 4rem;
+  padding: 2rem;
+  animation: desplazamientoDerecha 9.5s linear infinite;
+  z-index: 5;
+  margin-top: -1.5rem;
+}
+
+@keyframes desplazamientoDerecha {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(3960%);
+  }
+}
+
+/* Main inferior,  envoltorio de carousel */
+
+.main2 {
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/id/1364398448/photo/communication-technology-with-connections-around-earth-viewed-from-space-internet-iot.jpg?s=612x612&w=0&k=20&c=0BiRVD98WwnghQ-KYmoCSaZe2MLe__7fEERWo7LJ9jQ=");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Escalar la imagen para cubrir completamente el fondo */
+  background-position: center center;
+  z-index: 2;
+}
+
+.mainb {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid black 1rem;
+}
+
+/* Titulo de carrousel*/
+
+.text-carrousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24vh;
+  margin-right: -3rem;
+}
+.text-carrousel h1 {
+  font-family: xitalic;
+  font-size: 8rem;
+  color: rgb(250, 206, 11);
+  filter: drop-shadow(5px 7px 4px rgba(0, 0, 0, 0.5));
+
+  height: 21vh;
+  display: flex;
+  text-decoration: underline;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.scroll-up-text {
+  font-family: xitalic;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.5s ease, transform 2.5s ease;
+}
+
+.text-carrousel.active .scroll-up-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.texto-carou0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  color: rgba(239, 224, 11, 0.955);
+  filter: drop-shadow(5px 7px 4px rgba(0, 0, 0, 0.5));
+}
+
+.texto-carou h2 {
+  font-family: xcircus;
+  font-size: 5.5rem;
+  margin-top: -1.5rem;
+  animation: bounce 2s infinite;
+}
+.texto-carou2 h2 {
+  font-family: xcircus;
+  font-size: 4.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: 4rem;
+}
+/* Foto carousel  */
+
+.my-carrousel-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.my-carrousel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+  padding: 0 1rem;
+}
+
+.my-carrousel img {
+  width: 80rem;
+  height: 45rem;
+  border-radius: 10px 43px 45px 10px;
+  object-fit: cover;
+  box-shadow: -6px 10px 34px 20px rgba(239, 238, 238, 0.49);
+}
+
+.image-text {
+  background-color: rgba(199, 220, 209, 0.366);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 45rem;
+  margin: 0.5rem;
+  border-radius: 43px 10px 10px 45px;
+  font-family: xcircus;
+  font-size: 1.7rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: -6px 10px 34px 20px rgba(239, 238, 238, 0.49);
+}
+
+/* botonn de carousel */
+
+.nav-button {
+  display: inline-block;
+  padding: 185px 45px;
+  background-color: #584fad00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: -3rem;
+  opacity: 0;
+  background-color: #e4e4101c;
+  border: none;
+}
+
+.nav-button1 {
+  display: inline-block;
+  padding: 185px 45px;
+  background-color: #584fad00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: -3rem;
+  opacity: 0;
+  background-color: #e4e4101c;
+  border: none;
+}
+.nav-button:hover,
+.nav-button1:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: -40px; /* Ajusta el valor para la longitud de la punta */
+  width: 0;
+  height: 30px;
+  border-style: solid;
+  border-width: 30px 20px 30px 0;
+  border-color: transparent #e0e309 transparent transparent;
+}
+
+.nav-button1::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  right: -40px; /* Ajusta el valor para la longitud de la punta  */
+  width: 0;
+  height: 30px;
+  border-style: solid;
+  border-width: 30px 0 30px 20px; /* Invierte el valor de la segunda y tercera propiedad para cambiar la dirección de la punta */
+  border-color: transparent transparent transparent #e0e309; /* Cambia el color al lado derecho */
+}
+
+/* Letras interior imagenes carousel */
+
+.letters-carou {
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-family: xitalic;
+  font-weight: bold;
+  position: absolute;
+  margin-top: -8.5rem;
+  margin-left: 5rem;
+  color: rgb(222, 130, 19);
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  letter-spacing: 0.3rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px); /* Movimiento hacia la izquierda */
+  }
+}
+
+/* Volumen de letras para uso general */
+
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: -1rem;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociales a:active {
+  transform: translateY(2px);
+}
+
+.redes-sociales a:hover {
+  color: #55acee;
+  animation: cambio 0.3s;
+}
+
+.icono-instagram {
+  color: #bc2a8d;
+  animation: cambio 0.3s;
+}
+
+.icono-facebook {
+  color: #3b5998;
+  animation: cambio 0.3s;
+}
+
+.icono-twitter {
+  color: #00aced;
+  animation: cambio 0.3s;
+}
+
+/* Cards viajes_____________________ */
+
+.container2 {
+  margin-top: 9rem;
+  background-image: url("https://cdn.pixabay.com/photo/2019/11/11/11/43/fantasy-4618133_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  backdrop-filter: blur(15px);
+}
+
+.viajes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.25rem, 1fr));
+  grid-auto-rows: 35rem;
+  grid-gap: 50px;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  box-shadow: 3px 3px 0px RGB(38, 44, 58), 6px 6px 0px rgba(1, 1, 10, 0.89),
+    9px 9px 0px rgba(69, 109, 16, 0.7);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-image img {
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.card-image img:hover {
+  transform: scale(2.05);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-titulo {
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: rgba(255, 0, 0, 0.24);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.sinopsis-cartel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 43rem;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.517);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: bottom 1.9s ease-in-out;
+  font-family: xcircus;
+  overflow: hidden;
+}
+
+.card:hover .sinopsis-cartel {
+  display: block;
+  bottom: 0;
+  overflow: hidden;
+}
+
+
+
+
+
+.card-datos button {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #fffb00, #c7be13);
+  color: #0b0901;
+  cursor: pointer;
+  border: 17px solid #666;
+  border-bottom-color: rgb(8, 212, 36);
+  font-family: futurama;
+  letter-spacing: 3px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-datos button:hover {
+  background-color: rgb(8, 212, 36);
+  box-shadow: 0px 0px 15px rgba(8, 212, 36, 0.7);
+  background: radial-gradient(circle at center, #abb0e6, #6dc713);
+}
+
+.card-datos button:active {
+  background-color: #610000;
+  color: #ffffff;
+  border-color: #999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), inset 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Texto que aparece al comprar  */
+
+.comprado {
+  width: 16rem;
+  height: 6rem;
+  margin-top: -10rem;
+  padding: 1rem;
+  background-image: url("./imagenes/comic.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comprado p {
+  color: rgb(189, 11, 11);
+  font-family: xitalic;
+  font-size: 3rem;
+  /* -webkit-text-stroke: 2px black; */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+  z-index: 2;
+}
+
+/* Ventana de cesta de la compra */
+.cesta {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(234, 224, 224);
+  width: 40rem;
+  min-height: 20rem;
+  height: auto;
+  color: rgb(25, 1, 1);
+  position: fixed;
+  top: 39%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin: -10rem 0 0 -20rem;
+}
+
+.titulo-Cesty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: xitalic;
+  color: #3b5998;
+}
+.contenido-Cesty {
+  display: flex;
+  padding: 2rem;
+
+  font-family: xcircus;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.myCesta {
+  display: flex;
+  flex-direction: column;
+}
+.inCesta {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+div.cesta div.inCesta {
+  margin-bottom: 10px;
+}
+
+/* Texto pagina catalogo viajes */
+
+.viajes-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo-Viajes {
+  width: 50%;
+  margin-top: -7rem;
+}
+
+.titulo-Viajes h1 {
+  font-family: xitalic;
+  font-size: 15rem;
+  color: #face0b;
+  -webkit-text-stroke: 1px black;
+}
+.titulo-Viajes h4 {
+  padding: 2rem;
+  font-family: xcircus;
+  font-size: 2rem;
+  color: #face0b;
+  margin-top: -9rem;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.446);
+  background-color: #0b09017e;
+  border-radius: 3.5rem;
+  border: dotted 4px;
+}
+
+.dropbtn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 3px solid #0b09017e;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Boton de subir pagina */
+.scrolly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrolly button {
+  background-color: rgba(101, 109, 110, 0.476);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
+  outline: none; /* Eliminar el contorno al hacer clic en el botón */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 4rem;
+  position: fixed;
+  bottom: 190px;
+  right: 20px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.scrolly button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgb(101, 109, 110);
+}
+
+.scrolly button:active {
+  transform: scale(0.95); /* Reducir ligeramente el tamaño al hacer clic */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scrolly button h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+.scrolly button h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: -5rem;
+  transition: transform 0.3s ease;
+}
+
+.scrolly button h1 h2:hover {
+  transform: translateX(10rem);
+}

@@ -1,0 +1,27 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 100%; 
+  overflow-x: hidden;
+}
+
+/* Barra de navegacion */
+.navbarsub{
+  max-width: 100%;
+  background-color:#FACE0B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  
+};
+
